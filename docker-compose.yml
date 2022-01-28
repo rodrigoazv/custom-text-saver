@@ -10,6 +10,18 @@ networks:
     external: false
 
 services:
+
+  goduck:
+    build: ./goduck
+    command: sh ./entrypoint.sh
+    ports:
+      - 1333:1333
+    volumes:
+      - ./goduck:/app
+    working_dir: /app
+    networks:
+      - kong-net
+
   free_bird:
     build: ./free_bird
     command: /bin/sh ./entrypoint.sh
