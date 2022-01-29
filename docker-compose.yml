@@ -11,6 +11,17 @@ networks:
 
 services:
 
+  pardal:
+    build: ./pardal
+    command: sh ./entrypoint.sh
+    ports:
+      - 3000:3000
+    volumes:
+      - ./pardal:/app
+    working_dir: /app
+    networks:
+      - kong-net
+
   goduck:
     build: ./goduck
     command: sh ./entrypoint.sh

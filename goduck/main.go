@@ -13,7 +13,7 @@ func main() {
 		io.WriteString(w, "Wait a image\n")
 	}
 
-	http.HandleFunc("/hello", helloHandler)
-	log.Println("Listing for requests at http://localhost:1333/hello")
+	http.HandleFunc("/", helloHandler)
+	log.Println("Listing for requests at http://localhost:1333/")
 	log.Fatal(http.ListenAndServe(":1333", nil))
 }
