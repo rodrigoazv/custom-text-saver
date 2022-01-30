@@ -1,6 +1,6 @@
 import { makeRouter } from './router';
 
-import { Routes } from '@/modules/presentation/routes';
+import { Routes } from '@/common/routes';
 
 export function makeAppRouter() {
   const router = makeRouter();
