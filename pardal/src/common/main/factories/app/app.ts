@@ -11,7 +11,5 @@ export function makeApp(): JSX.Element {
   const appRouter = makeAppRouter();
   const children = appRouter.compile();
 
-  console.log(children)
-
   return React.createElement(App, {}, children);
 }
