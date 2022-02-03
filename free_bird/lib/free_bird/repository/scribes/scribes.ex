@@ -1,8 +1,7 @@
 defmodule FreeBird.ScribesRepo do
-  use FreeBird, :repository
+  alias FreeBird.{Scribes, Repo}
 
-  alias FreeBird.Scribes
-
-  def publish_scribe() do
+  def publish_scribe(scribe) do
+    Repo.insert!(Scribes.changeset(scribe))
   end
 end

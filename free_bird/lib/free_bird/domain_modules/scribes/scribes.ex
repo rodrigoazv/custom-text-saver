@@ -3,7 +3,7 @@ defmodule FreeBird.Scribes do
 
   @required_params [:blocks, :version, :hower]
   schema "users" do
-    field(:blocks, :array)
+    field(:blocks, {:array, :string})
     field(:version, :string)
     field(:hower, :string)
 

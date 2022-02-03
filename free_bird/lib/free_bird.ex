@@ -14,12 +14,7 @@ defmodule FreeBird do
     end
   end
 
-  def domain_service do
-    quote do
-    end
-  end
-
-  def aplication_service do
+  def application_service do
     quote do
       alias FreeBird.Repo
     end
@@ -32,9 +27,6 @@ defmodule FreeBird do
     end
   end
 
-  @doc """
-  When used, dispatch to the appropriate controller/view/etc.
-  """
   defmacro __using__(which) when is_atom(which) do
     apply(__MODULE__, which, [])
   end
