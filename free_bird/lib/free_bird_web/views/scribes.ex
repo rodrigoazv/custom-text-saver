@@ -1,5 +1,5 @@
-defmodule FreeBird.ScribesView do
-  use FreeBird, :view
+defmodule FreeBirdWeb.ScribesView do
+  use FreeBirdWeb, :view
 
   alias FreeBird.Scribes
 

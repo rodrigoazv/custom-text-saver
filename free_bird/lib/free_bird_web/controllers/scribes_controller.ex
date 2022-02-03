@@ -1,5 +1,5 @@
-defmodule FreeBird.ScribeController do
-  use FreeBird, :controller
+defmodule FreeBirdWeb.ScribeController do
+  use FreeBirdWeb, :controller
 
   alias FreeBird.Scribes
 

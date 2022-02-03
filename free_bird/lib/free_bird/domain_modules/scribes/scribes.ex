@@ -2,8 +2,8 @@ defmodule FreeBird.Scribes do
   use FreeBird, :domain_model
 
   @required_params [:blocks, :version, :hower]
-  schema "users" do
-    field(:blocks, {:array, :string})
+  schema "scribes" do
+    field(:blocks, :string)
     field(:version, :string)
     field(:hower, :string)
 
