@@ -10,4 +10,4 @@
 
 ## Architecture
 
-![Arch](https://i.imgur.com/T30PLnx.png)
+![Arch](https://i.imgur.com/YMTuEgU.jpg)
