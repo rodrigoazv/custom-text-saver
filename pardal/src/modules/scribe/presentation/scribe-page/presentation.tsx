@@ -1,15 +1,19 @@
-import React from "react"
+
+import React from 'react'
 
 import { Container } from './styles'
 
-function ScribePresentation(props: any) {
-    const { children } = props;
-   
-    return (
+function ScribePresentation (props: any) {
+  const {
+    output, onButtonClick
+  } = props
+
+  return (
       <Container id="editorjs">
-        <button onClick={()=>props.saveData()}>Save</button>
+        <button onClick={onButtonClick}>Save</button>
+        <pre ref={output}></pre>
       </Container>
-    );
+  )
 };
 
-  export default ScribePresentation;
+export default ScribePresentation
